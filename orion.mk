@@ -15,12 +15,12 @@
 $(call inherit-product, device/yu/lettuce/full_lettuce.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := cm_lettuce
+PRODUCT_NAME := orion_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 
@@ -36,3 +36,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=YU/YUPHORIA/YUPHORIA:5.1.1/LMY49J/YOG4PAS8A8:user/release-keys \
     PRIVATE_BUILD_DESC="YUPHORIA-user 5.1.1 LMY49J YOG4PAS8A8 release-keys"
 endif
+
+# BootAnimation Path
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+PRODUCT_COPY_FILES += \
+     vendor/orion/config/media/bootanimation.zip:system/media/bootanimation.zip

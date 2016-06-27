@@ -23,7 +23,7 @@ $(call inherit-product, device/yu/lettuce/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lettuce
-PRODUCT_NAME := full_lettuce
+PRODUCT_NAME := orion_lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
